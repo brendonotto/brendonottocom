@@ -11,6 +11,7 @@ type Props = {
   excerpt: string
   author: Author
   slug: string
+  imageAttribution: string
 }
 
 const HeroPost = ({
