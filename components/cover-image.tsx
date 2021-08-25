@@ -1,26 +1,34 @@
-import cn from 'classnames'
-import Link from 'next/link'
+import cn from "classnames";
+import Link from "next/link";
+import Image from "next/image";
 
 type Props = {
-  title: string
-  src: string
-  imageAttribution?: string
-  slug?: string
-}
+  title: string;
+  src: string;
+  imageAttribution?: string;
+  slug?: string;
+};
 
 const CoverImage = ({ title, src, imageAttribution, slug }: Props) => {
   const image = (
     <>
-      <img
+      <Image
         src={src}
         alt={`Cover Image for ${title}`}
-        className={cn('shadow-small', {
-          'hover:shadow-medium transition-shadow duration-200': slug,
+        className={cn("shadow-small", {
+          "hover:shadow-medium transition-shadow duration-200": slug,
         })}
+        height={1200}
+        width={1800}
       />
-      { imageAttribution && (<div className="text-center mt-2" dangerouslySetInnerHTML={{__html: imageAttribution}}></div>)}
+      {imageAttribution && (
+        <div
+          className="text-center mt-2"
+          dangerouslySetInnerHTML={{ __html: imageAttribution }}
+        ></div>
+      )}
     </>
-  )
+  );
   return (
     <div className="sm:mx-0">
       {slug ? (
@@ -31,7 +39,7 @@ const CoverImage = ({ title, src, imageAttribution, slug }: Props) => {
         image
       )}
     </div>
-  )
-}
+  );
+};
 
-export default CoverImage
+export default CoverImage;
