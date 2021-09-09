@@ -8,7 +8,7 @@ type Props = {
 const ExternalLink = ({ url, children }: Props) => {
   return (
     <a
-      className="font-medium text-green-900"
+      className="border-b-2 border-transparent hover:border-blue-900"
       href={url}
       target="_blank"
       rel="noopener noreferrer"
