@@ -5,8 +5,8 @@ const Intro = () => {
         Hi 👋 I'm Brendon
       </h1>
       <h4 className="text-center md:text-left text-lg mt-5 md:pl-8">
-        I'm a developer, father and husband. Occassional wood worker, blogger
-        and YouTuber. I work as a Lead Developer with FMG Suite.
+        I'm a father, husband and developer. Occassional wood worker, blogger
+        and YouTuber. I am a Lead Developer with FMG Suite.
       </h4>
     </section>
   );
