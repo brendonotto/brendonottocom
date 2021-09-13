@@ -5,7 +5,10 @@ author:
   name: "Brendon Otto"
   picture: "/assets/blog/authors/brendon.jpg"
 slug: "collectors-fallacy"
-coverImage: "/assets/blog/collectors-fallacy/cover.jpg"
+coverImage:
+  path: "/assets/blog/collectors-fallacy/cover.jpg"
+  height: "800"
+  width: "1200"
 ogImage:
   url: "/assets/blog/collectors-fallacy/cover.jpg"
 imageAttribution: 'Photo by <a href="https://unsplash.com/@impatrickt?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Patrick Tomasso</a> on <a href="https://unsplash.com/s/photos/messy-books?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>'

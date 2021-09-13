@@ -10,6 +10,8 @@ import Head from "next/head";
 import PostType from "../../types/post";
 import { getMDXComponent } from "mdx-bundler/client";
 import * as React from "react";
+import StaticCodeSnippet from "../../components/static-code-snippet";
+import InlineCodeSnippet from "../../components/inline-code-snippet";
 
 type Props = {
   post: PostType;
@@ -45,7 +47,12 @@ const Post = ({ post, morePosts, preview }: Props) => {
                 imageAttribution={post.imageAttribution}
               />
               <div className="markdown">
-                <Component />
+                <Component
+                  components={{
+                    pre: StaticCodeSnippet,
+                    code: InlineCodeSnippet,
+                  }}
+                />
               </div>
             </article>
           </>

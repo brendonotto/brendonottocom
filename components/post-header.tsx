@@ -6,7 +6,11 @@ import Author from "../types/author";
 
 type Props = {
   title: string;
-  coverImage: string;
+  coverImage: {
+    path: string;
+    height: string;
+    width: string;
+  };
   date: string;
   author: Author;
   imageAttribution?: string;
@@ -28,7 +32,9 @@ const PostHeader = ({
       <div className="mb-8 md:mb-16 sm:mx-0">
         <CoverImage
           title={title}
-          src={coverImage}
+          src={coverImage.path}
+          height={coverImage.height}
+          width={coverImage.width}
           imageAttribution={imageAttribution}
         />
       </div>

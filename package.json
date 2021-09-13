@@ -14,6 +14,7 @@
     "gray-matter": "4.0.3",
     "mdx-bundler": "^4.1.0",
     "next": "latest",
+    "prism-react-renderer": "^1.2.1",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "remark": "13.0.0",

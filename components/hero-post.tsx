@@ -6,7 +6,11 @@ import Author from "../types/author";
 
 type Props = {
   title: string;
-  coverImage: string;
+  coverImage: {
+    path: string;
+    height: string;
+    width: string;
+  };
   date: string;
   excerpt: string;
   author: Author;
@@ -25,7 +29,13 @@ const HeroPost = ({
   return (
     <section>
       <div className="mb-8 md:mb-16">
-        <CoverImage title={title} src={coverImage} slug={slug} />
+        <CoverImage
+          title={title}
+          src={coverImage.path}
+          height={coverImage.height}
+          width={coverImage.width}
+          slug={slug}
+        />
       </div>
       <div className="md:grid md:grid-cols-2 md:gap-x-16 lg:gap-x-8 mb-20 md:mb-28">
         <div>
