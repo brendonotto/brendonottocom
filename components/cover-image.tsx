@@ -20,7 +20,7 @@ const CoverImage = ({
   slug,
 }: Props) => {
   const image = (
-    <>
+    <div>
       <Image
         src={src}
         alt={`Cover Image for ${title}`}
@@ -36,7 +36,7 @@ const CoverImage = ({
           dangerouslySetInnerHTML={{ __html: imageAttribution }}
         ></div>
       )}
-    </>
+    </div>
   );
   return (
     <div className="sm:mx-0">
