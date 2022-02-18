@@ -10,7 +10,7 @@ const Footer = () => {
           <a href="https://github.com/brendonotto">Github</a>
           <a href="https://youtube.com/brendonotto">YouTube</a>
           <div>
-            <span>©2021 Brendon Otto</span>
+            <span>©2022 Brendon Otto</span>
           </div>
         </div>
       </Container>
