@@ -16,8 +16,8 @@
     "mdx-bundler": "^4.1.0",
     "next": "latest",
     "prism-react-renderer": "^1.2.1",
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0",
     "remark": "13.0.0",
     "remark-html": "13.0.1",
     "typescript": "^4.2.4"
