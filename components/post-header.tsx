@@ -6,7 +6,7 @@ import Author from "../types/author";
 
 type Props = {
   title: string;
-  coverImage: {
+  coverImage?: {
     path: string;
     height: string;
     width: string;
@@ -32,9 +32,9 @@ const PostHeader = ({
       <div className="mb-8 md:mb-16 sm:mx-0">
         <CoverImage
           title={title}
-          src={coverImage.path}
-          height={coverImage.height}
-          width={coverImage.width}
+          src={coverImage?.path}
+          height={coverImage?.height}
+          width={coverImage?.width}
           imageAttribution={imageAttribution}
         />
       </div>

@@ -4,9 +4,9 @@ import Image from "next/image";
 
 type Props = {
   title: string;
-  src: string;
-  height: string;
-  width: string;
+  src?: string;
+  height?: string;
+  width?: string;
   imageAttribution?: string;
   slug?: string;
 };
@@ -21,7 +21,7 @@ const CoverImage = ({
 }: Props) => {
   const image = (
     <div>
-      <Image
+      {src && <Image
         src={src}
         alt={`Cover Image for ${title}`}
         className={cn("shadow-small", {
@@ -29,7 +29,7 @@ const CoverImage = ({
         })}
         height={height}
         width={width}
-      />
+      />}
       {imageAttribution && (
         <div
           className="text-center mt-2"
